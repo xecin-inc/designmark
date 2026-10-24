@@ -1,0 +1,59 @@
+{
+  "name": "designmark",
+  "version": "1.0.0",
+  "description": "Search and add Japanese landing-page design systems (DESIGN.md) from designmark.jp — CLI, MCP server and Claude Code plugin.",
+  "mcpName": "io.github.xecin-inc/designmark",
+  "keywords": [
+    "design.md",
+    "design-system",
+    "landing-page",
+    "japanese",
+    "mcp",
+    "claude-code",
+    "cursor",
+    "ai-coding"
+  ],
+  "homepage": "https://designmark.jp/?utm_source=npm&utm_medium=readme&utm_campaign=tools",
+  "bugs": {
+    "url": "https://github.com/xecin-inc/designmark/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xecin-inc/designmark.git"
+  },
+  "license": "MIT",
+  "author": "XECIN Inc. (https://xecin.jp)",
+  "type": "module",
+  "bin": {
+    "designmark": "dist/cli.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "README_ja.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build": "node scripts/clean.mjs dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "node scripts/clean.mjs .test-dist && tsc -p tsconfig.test.json && node scripts/run-tests.mjs",
+    "prepack": "npm run build && node scripts/readme-utm.mjs npm",
+    "postpack": "node scripts/readme-utm.mjs github --after-pack",
+    "postpublish": "node scripts/readme-utm.mjs github"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.2",
+    "@types/node": "20.19.43",
+    "typescript": "7.0.2"
+  }
+}

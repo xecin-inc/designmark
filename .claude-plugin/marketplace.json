@@ -1,0 +1,16 @@
+{
+  "name": "designmark",
+  "description": "designmark.jp for Claude Code: find and apply Japanese landing-page design systems (DESIGN.md).",
+  "owner": {
+    "name": "XECIN Inc.",
+    "url": "https://xecin.jp"
+  },
+  "plugins": [
+    {
+      "name": "designmark",
+      "source": "./plugins/designmark",
+      "description": "Search and apply Japanese LP DESIGN.md files: a skill plus the designmark MCP server.",
+      "category": "design"
+    }
+  ]
+}

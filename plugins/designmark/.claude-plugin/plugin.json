@@ -1,0 +1,13 @@
+{
+  "name": "designmark",
+  "version": "1.0.0",
+  "description": "Japanese landing-page design systems (DESIGN.md) from designmark.jp — search, add and build.",
+  "author": {
+    "name": "XECIN Inc.",
+    "url": "https://xecin.jp"
+  },
+  "homepage": "https://designmark.jp",
+  "repository": "https://github.com/xecin-inc/designmark",
+  "license": "MIT",
+  "keywords": ["design.md", "design-system", "landing-page", "japanese", "mcp"]
+}

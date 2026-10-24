@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "designmark": {
+      "command": "npx",
+      "args": ["-y", "designmark@1", "mcp"]
+    }
+  }
+}

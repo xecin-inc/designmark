@@ -1,0 +1,23 @@
+name: Feature request / 機能の要望
+description: An idea for the CLI, MCP server or Claude Code plugin. / CLI・MCP サーバー・プラグインへの要望
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Features for bulk downloading or mirroring designmark.jp cannot be added (terms of use, Article 2, paragraph 3).
+        まとめて取得する機能・designmark.jp を複製する機能は追加できません（利用規約 第 2 条第 3 項）。
+  - type: textarea
+    id: goal
+    attributes:
+      label: What do you want to do? / やりたいこと
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: How could the tool help? / 提案
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else? / 補足

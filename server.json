@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.xecin-inc/designmark",
+  "title": "designmark",
+  "description": "Search and fetch Japanese landing-page design systems (DESIGN.md) from designmark.jp.",
+  "repository": {
+    "url": "https://github.com/xecin-inc/designmark",
+    "source": "github"
+  },
+  "websiteUrl": "https://designmark.jp",
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "designmark",
+      "version": "1.0.0",
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ],
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
